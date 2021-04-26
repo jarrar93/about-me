@@ -1,8 +1,17 @@
 body {
-background-color: aqua;
+background-color: rgba(168, 164, 126, 0.781);
 }
 .x{
-  color: chocolate;
-  font-size: 40px;
-  background-color: darkgreen;
+  color: rgb(17, 17, 16);
+  font-size: 80px;
+  background-color: rgb(220, 238, 220);
+}
+img{
+  width: 1000px;
+  height: 400px;
+  color: rgba(245, 245, 220, 0.808);
+  
+}
+p{
+  font-size: 30px;
 }

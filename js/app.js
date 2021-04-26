@@ -1,5 +1,5 @@
 let name;
-name = prompt('Hello, whats\'s your name ?');
+name = prompt('My name is Ahmed, and I am happy that you visited my page. Can I know your name? ?');
 alert('welcome ' + " " + name + '  in my page');
 alert('I will ask you some questions about me, please answer yes or no');
 
