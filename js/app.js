@@ -1,4 +1,6 @@
 
+'use strict'
+
 let name;
 name = prompt('My name is Ahmed, and I am happy that you visited my page. Can I know your name? ?');
 alert('welcome ' + " " + name + '  in my page');
@@ -54,10 +56,10 @@ if (app.toLowerCase() == "yes" || app.toLowerCase() == "y") {
 }
 
 alert('I will ask you a question and I want you to guess the correct answer,OK');
-alert('You only have 4 attempts to answer')
+alert('You only have 4 attempts to answer');
 let questions;
 
-for (i = 1; i <= 4; i++) {
+for (let i = 1; i <= 4; i++) {
 
   questions = Number(prompt('How old was the Prophet Muhammad when he died..? '))
 
@@ -79,86 +81,75 @@ for (i = 1; i <= 4; i++) {
 
 }
 
+
 alert('Hi , i will to ask you anther question,And you have 6 attempts, if you know one of the correct answers, you will be the winner....OK ');
-let multi = ['Norway', 'Denmark', 'Iceland', 'Sweden', 'Finland', 'Faroe Islands']
 
-let answer = prompt('Mention a country from Scandinavia...?')
-let x;
+//here i edit the the code and i make it with for loops _sultan_
 
-for (i = 1; i <= 5; i++) {
+// let multi = ['Norway', 'Denmark', 'Iceland', 'Sweden', 'Finland', 'Faroe Islands']
 
-  if (answer.toLowerCase() == "norway" || answer.toUpperCase() == "Norway") {
-    alert(' exactly this contry form Scandinavia')
+// let answer = prompt('Mention a country from Scandinavia...?')
+// let x;
 
-    break;
+// for (i = 1; i <= 5; i++) {
+
+//   if (answer.toLowerCase() == "norway" || answer.toUpperCase() == "Norway") {
+//     alert(' exactly this contry form Scandinavia')
+
+//     break;
+
+//   } else if (answer.toLowerCase() == "denmark" || answer.toUpperCase() == "Denmark") {
+//     alert('exactly this contry form Scandinavia')
+
+//     break;
+
+//   } else if (answer.toLowerCase() == "iceland" || answer.toUpperCase() == "Iceland") {
+//     alert('exactly this contry form Scandinavia')
+//     break;
+
+//   } else if (answer.toLowerCase() == "sweden" || answer.toUpperCase() == "Sweden") {
+//     alert('exactly this contry form Scandinavia')
+
+//     break;
+//   } else if (answer.toLowerCase() == "finland" || answer.toUpperCase() == "Finland") {
+//     alert('exactly this contry form Scandinavia')
+
+//     break;
+//   } else if (answer.toLowerCase() == "faroe islands" || answer.toUpperCase() == "Faroe Islands") {
+//     alert('exactly this contry form Scandinavia')
+//     break;
+
+//   } else if (answer != 1) {
+
+//     alert(' no answer')
+//     answer = prompt('Mention a country from Scandinavia...?')
+
+//   }
+// }
 
 
-  } else if (answer.toLowerCase() == "denmark" || answer.toUpperCase() == "Denmark") {
-    alert('exactly this contry form Scandinavia')
+function question7(){
+let multi = ['Norway', 'Denmark', 'Iceland', 'Sweden', 'Finland', 'Faroe Islands'];
 
-    break;
+for (let j = 0; j < 6; j++) {
 
-  } else if (answer.toLowerCase() == "iceland" || answer.toUpperCase() == "Iceland") {
-    alert('exactly this contry form Scandinavia')
-    break;
+  let answer = prompt('Mention a country from Scandinavia...?');
 
-  } else if (answer.toLowerCase() == "sweden" || answer.toUpperCase() == "Sweden") {
-    alert('exactly this contry form Scandinavia')
+  for (let O = 0; O <= multi.length; O++) {
 
-    break;
-  } else if (answer.toLowerCase() == "finland" || answer.toUpperCase() == "Finland") {
-    alert('exactly this contry form Scandinavia')
-
-    break;
-  } else if (answer.toLowerCase() == "faroe islands" || answer.toUpperCase() == "Faroe Islands") {
-    alert('exactly this contry form Scandinavia')
-    break;
-
-  } else if (answer != 1) {
-
-    alert(' no answer')
-    answer = prompt('Mention a country from Scandinavia...?')
-
+    if (answer == multi[O]) {
+      alert(' exactly this contry form Scandinavia');
+      j = 10;
+      break;
+    } else {
+      alert('try another country');
+      break;
+    }
   }
 }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+question7();
 
 
 
