@@ -5,13 +5,22 @@ background-color: rgba(168, 164, 126, 0.781);
   color: rgb(17, 17, 16);
   font-size: 80px;
   background-color: rgb(220, 238, 220);
+ 
 }
 img{
-  width: 1000px;
-  height: 400px;
+  width: 1500px;
+  height: 750px;
   color: rgba(245, 245, 220, 0.808);
+  float: initial;
   
 }
 p{
   font-size: 30px;
+}
+.lol{
+color: rgb(65, 88, 2);
+font-family: cursive;
+font-size: 20px;
+flex-direction: column;
+
 }
